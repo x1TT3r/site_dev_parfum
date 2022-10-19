@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #e7e7e7;
+}
+
+header,nav {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 20px;
+    display:flex;
+    background-color: blue;
+    color: #fff;
+    padding: 16px;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+nav a {
+    margin-left: 10px;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+.container {
+    justify-content: space-between;
+    display: flex;
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-store {
+    margin-left: 64px;
+    margin-bottom: 48px;
+}
+
+.about {
+    margin-top: 32px;
+}
+
+.about img {
+    margin-top: 16px;
+    max-width: 100%;
+    padding: 6px;
+}
+
+.about .store-about {
+    display:grid;
+    grid-template-columns: 45% 55%;
+    font-size: 1em;
+}
+
+.store-about h2 {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    width: 100%;
+    color: blue;
+    font-style: italic;
+    font-weight:bolder;
+    font-size: 2em;
+    border-bottom: 4px solid blue ;
+}
+
+.store h3 {
+    font-size: 2em;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.store p {
+    text-align: center;
+    font-size:1.3em;
+}
+
+.produtos h2{
+    color: blue;
+    font-style: italic;
+    font-weight:bolder;
+    margin-top: 48px;
+    font-size: 2em;
+    border-bottom: 4px solid blue;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+    column-gap: 1%;
+    row-gap: 5%;
+
+}
+
+button {
+    cursor: pointer;
+    margin-top: 36px;
+    margin-bottom: 48px;
+    font-size: 1.1em;
+    font-weight:bolder;
+    color: #fff;
+    width: 100%;
+    padding: 7px;
+    border-radius: 4px;
+    border: none;
+    background-color: blue;
+}
+
+.products .store img {
+    margin-top: 60px;
+    max-width: 100%;
+}
+
+@media screen and (max-width:640px) {
+    .container {
+        display: block;
+        max-width: 90%;
+    }
+
+    header .container {
+        display:flex;
+    }
+
+    header .container nav {
+        display:inline;
+        margin-left:2px ;
+        width: 100%;
+        align-items: center;
+    }
+
+    .about .store-about {
+        display:block;
+        font-size: 0.9em;
+    }
+
+    .about-store h2 {
+        padding-bottom: 21px;
+        margin-bottom: 60px;
+    }
+
+    .about-store,.store-about {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .produtos {
+        margin: 10px;
+    }
+
+    .produtos h2 {
+        padding-bottom: 21px;
+        margin-top: 100px;
+    }
+
+    .products {
+        max-width: 100%;
+        display: block;
+    }
+
+}
+
+@media screen and (min-width:641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .about .store-about {
+        display:block;
+    }
+
+    .about-store {
+    margin-left: 0px;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        column-gap: 1%;
+        row-gap: 5%;
+    
+    }
+
+}
